@@ -1,0 +1,17 @@
+<h1>Produtos:</h1>
+<table border="1">
+    <tr class="cabecalho">
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Links</th>
+    </tr>
+
+    {{#each produtos}}
+        <tr>
+            <th>{{name}}</th>
+            <th>{{price}}</th>
+            <th><a href="/{{link}}">Detalhes do produto</a></th>
+        </tr>
+    {{/each}}
+
+</table>
